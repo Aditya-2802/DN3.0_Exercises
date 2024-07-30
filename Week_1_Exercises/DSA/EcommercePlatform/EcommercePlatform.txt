@@ -1,0 +1,27 @@
+1. Understand Asymptotic Notation
+
+Q.Explain Big O notation and how it helps in analyzing algorithms?
+=>Big O Notation: Big O notation describes the upper bound of the time complexity of an algorithm, providing an estimate of the worst-case scenario in terms of input size (n). It helps in understanding how an algorithm's performance scales with increasing input sizes.
+Why It's Important: Analyzing algorithms with Big O notation helps developers choose the most efficient algorithm, ensuring optimal performance, especially for large datasets.
+
+Q.Describe the best, average, and worst-case scenarios for search operations.
+=>Best, Average, and Worst-Case Scenarios for Search Operations:
+1.Best Case: The minimum time an algorithm takes to complete, usually when the desired element is found at the first position. For example, O(1) for linear search if the element is the first item.
+2.Average Case: The expected time an algorithm takes to complete over all possible inputs. For example, O(n/2) for linear search, as it may need to check half of the elements on average.
+3.Worst Case: The maximum time an algorithm takes to complete, usually when the desired element is not found, or is the last element. For example, O(n) for linear search when the element is not in the array.
+
+4. Analysis
+
+Q.Compare the time complexity of linear and binary search algorithms.
+=>Linear Search: O(n)
+Best Case: O(1) - When the element is the first item.
+Average Case: O(n/2) ≈ O(n) - When the element is somewhere in the middle.
+Worst Case: O(n) - When the element is the last item or not present.
+Binary Search: O(log n)
+Best Case: O(1) - When the element is the middle item.
+Average Case: O(log n) - Each step reduces the search interval by half.
+Worst Case: O(log n) - When the element is not present, or requires maximum steps to be found.
+
+Q.Discuss which algorithm is more suitable for your platform and why?
+=> Binary Search is more suitable for the e-commerce platform due to its logarithmic time complexity, making it significantly faster for large datasets. However, it requires the array to be sorted. If the product data changes frequently, maintaining a sorted array might add overhead, but the performance gain in search operations justifies it for platforms with a large number of products.
+Linear Search is simpler and does not require a sorted array, but its linear time complexity makes it less efficient for large datasets.
