@@ -15,5 +15,4 @@ public class Main {
     // Call a method on the BookService bean to test the dependency injection
     bookService.performService();
 }
-
 }

@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-           http://www.springframework.org/schema/beans/spring-beans.xsd">
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop 
+           http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <aop:aspectj-autoproxy/>
+
+    <!-- Registering the LoggingAspect bean -->
+    <bean id="loggingAspect" class="com.library.aspect.LoggingAspect"/>
 
     <!-- Define the BookRepository bean -->
     
     <bean id="bookRepository" class="com.library.repository.BookRepository"/>
 
-<!-- Define the BookService bean and inject the BookRepository dependency -->
+ <!-- Defining the BookService bean and injecting the BookRepository dependency -->
     <bean id="bookService" class="com.library.service.BookService">
         <property name="bookRepository" ref="bookRepository"/>
     </bean>
