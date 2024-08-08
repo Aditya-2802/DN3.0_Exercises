@@ -11,7 +11,7 @@ public class Main {
         // Load Spring context from applicationContext.xml
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        // Retrieve the BookService bean from the context
+        // Retrieve  BookService bean from the context
         BookService bookService = (BookService) context.getBean("bookService");
         // configuration test
         bookService.performService();

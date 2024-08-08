@@ -20,6 +20,7 @@ public class BookService {
     public void setBookRepository(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
+    
     // logic methods
     public void performService() {
     // Logic that uses bookRepository
