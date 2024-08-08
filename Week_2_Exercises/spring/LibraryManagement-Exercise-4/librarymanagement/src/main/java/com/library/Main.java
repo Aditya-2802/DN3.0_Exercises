@@ -15,6 +15,5 @@ public class Main {
         BookService bookService = (BookService) context.getBean("bookService");
         // configuration test
         bookService.performService();
-    }
-    
+    }    
 }
