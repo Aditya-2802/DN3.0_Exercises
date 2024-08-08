@@ -26,11 +26,14 @@
             <version>5.3.21</version>
         </dependency>
         <!-- Spring AOP -->
+        <!-- <dependency> -->
+            <!-- AspectJ -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-            <version>5.3.21</version>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.7</version>
         </dependency>
+        <!-- </dependency> -->
         <!-- Spring WebMVC -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -99,5 +102,5 @@
       </plugins>
     </pluginManagement>
   </build>
-  
+
 </project>

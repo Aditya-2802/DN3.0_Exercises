@@ -15,12 +15,10 @@ public class BookService {
     public BookService(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
-    
     // Setter method for BookRepository
     public void setBookRepository(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
-    
     // logic methods
     public void performService() {
     // Logic that uses bookRepository

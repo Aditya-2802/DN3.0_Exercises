@@ -3,7 +3,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 
-public class BookRepository {
+public class BookRepository
+ {
     // Repository logic methods
     public void performRepositoryAction() 
     {
